@@ -1,0 +1,29 @@
+IBM Nao. How to use.
+
+Software requirements.
+This was the software we used when developing our robot. Some were older versions
+at time of development, we did this intentionally as we ran into problems when using
+newer versions.
+
+1. Python 2.7 *32-bit*. This is for the NaoQi SDK to communicate with your robot.
+2. V-Rep PRO EDU, Version 3.6.2 64-bit.
+3. Choregraphe version 2.1.4.13
+4. Any Python IDE of your choice. 
+5. NaoQi Python SDK. 32-bit.
+
+How to use:
+1. Launch V-Rep and open the scene myNAO.ttt in the Vrep scene folder. 
+2. Launch Choregraphe and connect to a virtual bot. Make sure you get the port number of your virtual bot.
+3. Open the Scripts folder as a project in a IDE of your choice.
+	3.1 Run single-nao-control.py. Use the correct port numbers of your robots. Once you see
+	"Choregraphe connected to V-Rep" then you're good to go.
+	3.2 Now, you want the robot in V-Rep to initially match the robot in Choregraphe. Since
+	the robot in V-Rep is initially sitting down, the robot in Choregraphe must also be sitting down.
+	Make sure the robot in Choregraphe is sitting down before you continue to the next step.
+	3.3 Start the V-Rep simulation by clicking the play button.
+	3.4 Finally, run MSTT.py
+	
+The program will start listening. To wake it and make it stand up, you must greet
+it with "Hello", "Hi" or "Hey". Then ask for the category you would like. The robot
+should then point you in the right direction and say which shelf you should go to.
+And that's it. To change the flow of the interaction, edit the main.py file. 
