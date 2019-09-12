@@ -14,8 +14,8 @@ import pyaudio
 # If service instance provides API key authentication
 service = TextToSpeechV1(
     ## url is optional, and defaults to the URL below. Use the correct URL for your region.
-    url='https://gateway-lon.watsonplatform.net/text-to-speech/api',
-    iam_apikey='3SCrZtgVge2nR9aw05XPpKlWKI0-mavqm7Eoc1ef1bY2')
+    url='',
+    iam_apikey='')
 
 class Play(object):
     """

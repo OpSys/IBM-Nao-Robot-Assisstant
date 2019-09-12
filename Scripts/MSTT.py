@@ -37,8 +37,8 @@ audio_source = AudioSource(q, True, True)
 
 # initialize speech to text service
 speech_to_text = SpeechToTextV1(
-    iam_apikey='IOccrNutMkQ80aoLNy2kePYfyPAmKoZDj_B9Wa1pI-CJ',
-    url='https://gateway-lon.watsonplatform.net/speech-to-text/api')
+    iam_apikey='',
+    url='')
 
 
 # define callback for the speech to text service
